@@ -3,21 +3,21 @@ var minWidth = 480;
 var maxWidth = 980;
 /* Function for changing the place of photos in Homepage 3rd section */
 function change_photo_arrangement () {
-        $('.photo-row').addClass('no-display');
+        $('.change-order').addClass('no-display');
         $('.clone').removeClass('no-display');
-        $('.photo-row.clone .column1').insertAfter('.photo-row.clone .column2');
+        $('.change-order.clone .column1').insertAfter('.change-order.clone .column2');
 
 };
 
 function reset_photo_arrangement () {
-        $('.photo-row').removeClass('no-display');
+        $('.change-order').removeClass('no-display');
         $('.clone').addClass('no-display');
 }
 
 
 /* Run Photo Arrangement on ready */
 $( document ).ready(function() {
-    $('.photo-row').clone(true).addClass('clone no-display').insertAfter('.photo-row1');
+    $('.change-order').clone(true).addClass('clone no-display').insertAfter('.change-order');
     
      var w_width = $(window).innerWidth();
       
@@ -34,7 +34,7 @@ $( window ).resize(function() {
 
     resizeTimer = setTimeout( function() {
     $('.clone').remove();
-    $('.photo-row1').clone(true).addClass('clone no-display').insertAfter('.photo-row1');
+    $('.change-order').clone(true).addClass('clone no-display').insertAfter('.change-order');
     
     var w_width = $(window).innerWidth();
     
