@@ -5,7 +5,7 @@ var maxWidth = 980;
 function change_photo_arrangement () {
         $('.photo-row').addClass('no-display');
         $('.clone').removeClass('no-display');
-        $('.photo-row.clone .column:nth-child(3)').insertAfter('.photo-row.clone .column:nth-child(4)');
+        $('.photo-row.clone .column1').insertAfter('.photo-row.clone .column2');
 
 };
 
